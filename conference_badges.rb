@@ -6,8 +6,8 @@ def badge_maker(name) #returns string "Hello my name is XXXX" when fed single na
 end
 
 def batch_badge_creator(attendees) #like #badge_maker but takes array of names and returns each formatted
-  attendees.map do |name|
-    "Hello, my name is #{name}."
+  attendees.each do |name|
+    print "Hello, my name is #{name}."
   end
 end
 
